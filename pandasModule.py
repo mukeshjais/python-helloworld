@@ -9,6 +9,7 @@ data = {
 
 
 
+
 df = pd.DataFrame(data)
 df.drop('state', axis=1, inplace=True)
 df.set_index('date', inplace=True)
