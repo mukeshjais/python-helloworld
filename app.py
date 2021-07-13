@@ -23,11 +23,13 @@ def metrics():
             status=200,
             mimetype='application/json'
     )
+    ## log line
     app.logger.info('{0}, metrics End point was reached.'.format(datetime.now().strftime("%b-%d-%Y %H:%M:%S")))
     return response
 
 @app.route("/")
 def hello():
+    ## log line
     app.logger.info('{0}, Main End point was reached.'.format(datetime.now().strftime("%b-%d-%Y %H:%M:%S")))
     return "Hello My World!"
 
